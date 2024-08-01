@@ -208,3 +208,52 @@ void loop()
 
     delay(1000);
 }
+```
+# An Analysis of the Perceptron-Multilayer Algorithm and its Applications
+
+## Overview
+This repository contains the implementation and analysis of the Perceptron and Multilayer Perceptron (MLP) algorithms, inspired by the foundational work of Frank Rosenblatt and subsequent advancements in neural networks. The project aims to provide a comprehensive understanding of these models, their training processes, and their applications in solving classification problems.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Objectives](#objectives)
+- [Implementation](#implementation)
+- [Hardware Setup](#hardware-setup)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+The perceptron is a simple processing unit that emulates the function of biological neurons. Introduced in 1958, it laid the groundwork for modern neural networks. This project explores the perceptron's capabilities, limitations, and the evolution to multilayer perceptrons, which can solve more complex, non-linear problems.
+
+## Objectives
+- Provide a comprehensive understanding of the perceptron model and its historical significance.
+- Demonstrate the implementation of a perceptron using the ESP32 microcontroller.
+- Apply the perceptron model to solve binary classification problems.
+- Extend the study to multilayer perceptrons and analyze their performance.
+- Discuss the limitations of perceptrons and explore future directions in neural network research.
+
+## Implementation
+The implementation is done in C++ and includes:
+- A simple perceptron model.
+- A multilayer perceptron model with one hidden layer.
+- Integration with hardware components (ESP32) for real-world applications.
+
+### Key Files
+- `main.cpp`: Main program file for the ESP32 implementation.
+- `lib.h`: Library for handling input/output operations.
+- `activacion.h`: Contains activation function implementations.
+- `calculo_error.h`: Functions for error calculation.
+- `red_neuronal.h`: Defines the neural network structure and training methods.
+
+## Hardware Setup
+The project utilizes an ESP32 microcontroller with the following components:
+- **Buttons**: Two push-button switches for input.
+- **LEDs**: Three Light Emitting Diodes (LEDs) to indicate predictions.
+
+### Connections
+- Button 1: GPIO pin 22
+- Button 2: GPIO pin 23
+- LED 1: GPIO pin 5
+- LED 2: GPIO pin 18
+- LED 3: GPIO pin 19
